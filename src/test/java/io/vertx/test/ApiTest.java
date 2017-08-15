@@ -32,7 +32,7 @@ public class ApiTest {
         final Async async = context.async();
 
         vertx.createHttpClient() //
-                .getNow(3001, "localhost", "/hello", response -> {
+                .getNow(4000, "localhost", "/hello", response -> {
                     response.handler(body -> {
                         //context.assertTrue(body.toString().contains(EXPECTED_MESSAGE_HELLO));
                         async.complete();
