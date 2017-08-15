@@ -17,6 +17,7 @@ public class App extends AbstractVerticle
     public void start() throws Exception {
 
         vertx.deployVerticle(Api.class.getCanonicalName());
+        vertx.deployVerticle(Mongo.class.getCanonicalName());
 
     }
 
